@@ -7,14 +7,14 @@ import {
 } from "react-icons/fa";
 import { TbBriefcase2 } from "react-icons/tb";
 
-const JobCard = () => {
+const JobCard = ({jobs}) => {
     return (
-        <div>
-            <div>JobCard</div>
-            <div className='shadow-xl/30  max-w-[450px]  mx-4 my-4 py-4 px-4 rounded-[8px]'>
+        <>
+            <div className='grid grid-cols-3  gap-5 mx-4 my-4 py-4 px-4 rounded-[8px]'>
+            
                 {jobs.map((job) => (
-                    <div key={job.id}>
-                        <div className='flex justify-between'>
+                    <div key={job.id} className="shadow-xl/30 px-3 py-3">
+                        <div className='flex  justify-between '>
                             <div className='w-[40px] h-[40px] bg-blue-700 flex justify-center items-center rounded-[8px]'><FaBriefcase color='white' size={20} /></div>
                             <div>
                                 <div className='text-2xl'>{job.title}</div>
@@ -31,8 +31,8 @@ const JobCard = () => {
                         </div>
                         <div >
                             <div className='flex gap-2 border-b-2 border-gray-200 pb-3'>
-                                <div className='flex flex-wrap gap-2  '>{job.skills.map((skils) => (
-                                    <div key={skils.id} className='border-2 border-gray-200 px-1 py-1 rounded-[4px]'>
+                                <div className='flex flex-wrap gap-2  '>{job.skills.map((skils,index) => (
+                                    <div key={index} className='border-2 border-gray-200 px-1 py-1 rounded-[4px]'>
                                         <div className='text-sm text-blue-700'>{skils}</div>
                                     </div>
                                 ))}</div></div>
@@ -49,7 +49,7 @@ const JobCard = () => {
 
                 }
             </div>
-        </div>
+        </>
 
     )
 }
