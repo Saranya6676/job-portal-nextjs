@@ -5,7 +5,10 @@ const Filter = ({ experience,
     location,
     setLocation,
     freshness,
-    setFreshness }) => {
+    setFreshness,
+    workmode,
+    setWorkmode,
+}) => {
     return (
         <>
             <div className="flex flex-col gap-5 w-[200px] mx-4 my-4 py-4 px-4 ">
@@ -20,10 +23,19 @@ const Filter = ({ experience,
                 <h3>Job Type</h3>
 
                 <select value={jobType} onChange={(e) => setJobType(e.target.value)} className="w-[200px]  border border-gray-300">Job Type
-                    <option value="">Select Job Type </option>
+                    <option value="all">All Job Types </option>
+                    <option value="Full Time">Full Time</option>
+                    <option value="internship">INTERSHIP</option>
+
+                </select>
+                <h3>work mode</h3>
+                <select value={workmode} onChange={(e) => setWorkmode(e.target.value)} className="w-[200px]  border border-gray-300">Work Mode
+                    <option value="all">All  </option>
                     <option value="Work from office">Work from office</option>
-                    <option value="Remote">Remote</option>
                     <option value="Hybrid">Hybrid</option>
+                    <option value="Remote">Remote</option>
+
+
                 </select>
                 <h3>Location</h3>
                 <select value={location} onChange={(e) => setLocation(e.target.value)} className="w-[200px]  border border-gray-300">Job Type
@@ -36,11 +48,12 @@ const Filter = ({ experience,
                 <h3>Freshness</h3>
 
                 <select value={freshness} onChange={(e) => setFreshness(e.target.value)} className="w-[200px]  border border-gray-300">Job Type
-                    <option value="all">Last 30 days</option>
-                    <option value="coimbatore">Last 15 days</option>
-                    <option value="chennai">Last 7 days</option>
-                    <option value="bangalore">Last 3 days</option>
-                    <option value="hyderabad">Last 1 days</option>
+                    <option value="all">all</option>
+                    <option value="30 days">Last 30 days</option>
+                    <option value="15 days">Last 15 days</option>
+                    <option value="7 days">Last 7 days</option>
+                    <option value="3 days">Last 3 days</option>
+                    <option value="1 days">Last 1 days</option>
                 </select>
 
 

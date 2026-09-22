@@ -6,7 +6,8 @@ export const jobs = [
     location: "Coimbatore",
     experience: "1-4 Years",
     type: "Full Time",
-    posted: "3 weeks ago",
+    posted: "30 days ",
+    workMode: "Work from office",
     // salary: "4-6 LPA",
     skills: [
       "React.js",
@@ -15,18 +16,20 @@ export const jobs = [
       "Bootstrap",
       "JavaScript",
       "jquery"
-      
+
     ],
   },
-   {
+  {
     id: 2,
     title: "React Developer",
     company: "Zoho Corporation",
     location: "Chennai",
     experience: "2-4 Years",
     type: "Full Time",
+    workMode: "Work from office",
+
     // salary: "₹7 - ₹10 LPA",
-    posted: "2 days ago",
+    posted: "15 days",
     skills: ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "REST API"],
   },
   {
@@ -36,8 +39,10 @@ export const jobs = [
     location: "Chennai",
     experience: "1-3 Years",
     type: "Full Time",
+    workMode: "Work from office",
+
     // salary: "₹6 - ₹9 LPA",
-    posted: "5 days ago",
+    posted: "5 days",
     skills: ["MongoDB", "Express.js", "React.js", "Node.js", "JWT"],
   },
   {
@@ -47,8 +52,10 @@ export const jobs = [
     location: "Bangalore",
     experience: "2-5 Years",
     type: "Full Time",
+    workMode: "Work from office",
+
     // salary: "₹5 - ₹8 LPA",
-    posted: "1 week ago",
+    posted: "7 days",
     skills: ["Node.js", "Express.js", "MySQL", "REST API", "JWT"],
   },
   {
@@ -58,8 +65,10 @@ export const jobs = [
     location: "Hyderabad",
     experience: "2-5 Years",
     type: "Full Time",
+    workMode: "Work from office",
+
     // salary: "₹6 - ₹11 LPA",
-    posted: "4 days ago",
+    posted: "4 days ",
     skills: ["React.js", "Node.js", "MySQL", "Express.js", "Git"],
   },
   {
@@ -68,9 +77,11 @@ export const jobs = [
     company: "Cognizant",
     location: "Coimbatore",
     experience: "1-3 Years",
-    type: "Full Time",
+    type: "internship",
+    workMode: "Work from office",
+
     // salary: "₹4 - ₹7 LPA",
-    posted: "1 day ago",
+    posted: "1 days",
     skills: ["Angular", "TypeScript", "RxJS", "Bootstrap", "HTML"],
   },
   {
@@ -80,8 +91,10 @@ export const jobs = [
     location: "Bangalore",
     experience: "1-2 Years",
     type: "Full Time",
+    workMode: "Work from office",
+
     // salary: "₹4 - ₹6 LPA",
-    posted: "6 days ago",
+    posted: "6 days",
     skills: ["HTML", "CSS", "JavaScript", "Tailwind CSS", "Figma"],
   },
   {
@@ -91,8 +104,10 @@ export const jobs = [
     location: "Pune",
     experience: "0-2 Years",
     type: "Full Time",
+    workMode: "Work from office",
+
     // salary: "₹4 - ₹6 LPA",
-    posted: "2 weeks ago",
+    posted: "2 weeks",
     skills: ["Python", "Django", "MySQL", "REST API", "Git"],
   },
   {
@@ -102,8 +117,10 @@ export const jobs = [
     location: "Hyderabad",
     experience: "2-4 Years",
     type: "Full Time",
+    workMode: "Work from office",
+
     // salary: "₹5 - ₹8 LPA",
-    posted: "3 days ago",
+    posted: "3 days",
     skills: ["Java", "Spring Boot", "MySQL", "Hibernate", "Maven"],
   },
   {
@@ -113,8 +130,10 @@ export const jobs = [
     location: "Bangalore",
     experience: "2-5 Years",
     type: "Full Time",
+    workMode: "Work from office",
+
     // salary: "₹8 - ₹12 LPA",
-    posted: "1 week ago",
+    posted: "7 days",
     skills: ["Docker", "Kubernetes", "AWS", "Jenkins", "Linux"],
   },
 ];

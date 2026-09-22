@@ -25,7 +25,7 @@ const JobCard = ({ jobs }) => {
                         <div className='flex flex-wrap items-center gap-6 py-4'>
                             <div className='flex gap-3 items-center'><TbBriefcase2 />{job.experience}</div>
                             <div className='flex gap-3 items-center'><FaMapMarkerAlt />{job.location}</div>
-                            <div className='bg-emerald-200 text-emerald-700 px-3 py-1 rounded-[6px]'>Full Time</div>
+                            <div className='bg-emerald-200 text-emerald-700 px-3 py-1 rounded-[6px]'>{job.type}</div>
 
 
 

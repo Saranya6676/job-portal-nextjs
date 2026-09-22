@@ -13,17 +13,22 @@ import Filter from "@/components/Filter";
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState("");
   const [experience, setExperience] = useState("all")
-  const [jobType, setJobType] = useState("")
+  const [jobType, setJobType] = useState("all")
   const [location, setLocation] = useState("all");
   const [freshness, setFreshness] = useState("all");
+  const [workmode,setWorkmode] = useState("all")
 
-  const filteredJobs = jobs.filter((job) =>{
-  const matchesSearch  =  job.title.toLowerCase().includes(searchTerm.toLowerCase())
-  const matchesExperience =  experience == "all" ||  job.experience === experience
-  const matchesLocation =  location == "all" || job.location === location
+  const filteredJobs = jobs.filter((job) => {
+    const matchesSearch = job.title.toLowerCase().includes(searchTerm.toLowerCase())
+    const matchesExperience = experience == "all" || job.experience === experience
+    const matchesLocation = location == "all" || job.location === location
+    const matchjobType = jobType == "all" || job.type === jobType
+    const matchFreshness = freshness == "all" || job.posted === freshness
+    const matchWorkmode  = workmode =="all" || job.workMode === workmode
 
-  return matchesSearch && matchesExperience && matchesLocation
-})
+
+    return matchesSearch && matchesExperience && matchesLocation && matchjobType && matchFreshness && matchWorkmode
+  })
 
 
   return (
@@ -39,8 +44,12 @@ export default function Home() {
           setLocation={setLocation}
           freshness={freshness}
           setFreshness={setFreshness}
-        />
-      <JobCard jobs={filteredJobs} />
+          workmode = {workmode} 
+         setWorkmode = {setWorkmode}
+
+        /> 
+        {filteredJobs.length > 0 ? (        <JobCard jobs={filteredJobs} 
+         /> ) : <p>no jobs found</p> }
       </div>
 
 
