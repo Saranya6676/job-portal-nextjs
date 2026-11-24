@@ -6,6 +6,9 @@ import {
     FaRegBookmark,
 } from "react-icons/fa";
 import { TbBriefcase2 } from "react-icons/tb";
+import Link from "next/link"
+import SaveJobButton from "@/components/SaveJobButton" 
+
 
 const JobCard = ({ jobs }) => {
     return (
@@ -13,11 +16,12 @@ const JobCard = ({ jobs }) => {
             <div className='grid grid-cols-3  gap-5 mx-4 my-4 py-4 px-4 rounded-[8px]'>
 
                 {jobs.map((job) => (
+
                     <div key={job.id} className="shadow-xl/30 px-3 py-3">
                         <div className='flex  justify-between '>
                             <div className='w-[40px] h-[40px] bg-blue-700 flex justify-center items-center rounded-[8px]'><FaBriefcase color='white' size={20} /></div>
                             <div>
-                                <div className='text-2xl'>{job.title}</div>
+                                <Link href={`/jobs/${job.id}`} className='text-2xl'>{job.title}</Link>
                                 <div className='text-blue-700'>{job.company}</div>
                             </div>
                             <div><FaRegBookmark /></div>
@@ -40,7 +44,8 @@ const JobCard = ({ jobs }) => {
                         </div>
                         <div className='flex justify-between items-center pt-3'>
                             <div className=''>{job.posted}</div>
-                            <button className='bg-blue-700 text-white px-3 py-2 rounded-[6px]'>Apply Now</button>
+                            {/* <button className='bg-blue-700 text-white px-3 py-2 rounded-[6px]'>Save</button> */} 
+                            <SaveJobButton jobId = {job.id} />
                         </div>
 
 

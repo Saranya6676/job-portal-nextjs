@@ -18,6 +18,25 @@ export const jobs = [
       "jquery"
 
     ],
+    description:
+    "We are looking for a Frontend Developer to build responsive and user-friendly web applications using modern frontend technologies.",
+
+  responsibilities: [
+    "Develop responsive web applications using React.js",
+    "Build reusable and maintainable UI components",
+    "Integrate REST APIs with frontend applications",
+    "Fix UI issues and improve application performance",
+    "Work with developers and designers to deliver features"
+  ],
+
+  requirements: [
+    "Good knowledge of JavaScript and React.js",
+    "Understanding of HTML and CSS",
+    "Experience with REST APIs",
+    "Basic knowledge of Git",
+    "Good problem-solving skills"
+  ]
+
   },
   {
     id: 2,
@@ -31,6 +50,24 @@ export const jobs = [
     // salary: "₹7 - ₹10 LPA",
     posted: "15 days",
     skills: ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "REST API"],
+     description:
+    "We are looking for a Frontend Developer to build responsive and user-friendly web applications using modern frontend technologies.",
+
+  responsibilities: [
+    "Develop responsive web applications using React.js",
+    "Build reusable and maintainable UI components",
+    "Integrate REST APIs with frontend applications",
+    "Fix UI issues and improve application performance",
+    "Work with developers and designers to deliver features"
+  ],
+
+  requirements: [
+    "Good knowledge of JavaScript and React.js",
+    "Understanding of HTML and CSS",
+    "Experience with REST APIs",
+    "Basic knowledge of Git",
+    "Good problem-solving skills"
+  ]
   },
   {
     id: 3,
@@ -44,6 +81,24 @@ export const jobs = [
     // salary: "₹6 - ₹9 LPA",
     posted: "5 days",
     skills: ["MongoDB", "Express.js", "React.js", "Node.js", "JWT"],
+     description:
+    "We are looking for a Frontend Developer to build responsive and user-friendly web applications using modern frontend technologies.",
+
+  responsibilities: [
+    "Develop responsive web applications using React.js",
+    "Build reusable and maintainable UI components",
+    "Integrate REST APIs with frontend applications",
+    "Fix UI issues and improve application performance",
+    "Work with developers and designers to deliver features"
+  ],
+
+  requirements: [
+    "Good knowledge of JavaScript and React.js",
+    "Understanding of HTML and CSS",
+    "Experience with REST APIs",
+    "Basic knowledge of Git",
+    "Good problem-solving skills"
+  ]
   },
   {
     id: 4,
